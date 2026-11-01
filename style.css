@@ -446,6 +446,11 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
 }
 .act-sell .act-price { background: rgba(255, 138, 128, 0.14); color: #ffd7d0; }
 #info .row .act-sell:hover { background: linear-gradient(180deg, #5d3038, #4a262c); filter: none; }
+.act-up .act-price { min-width: calc(1.35em + 3ch + 0.5em + 16px); text-align: center; }
+.act-sell .act-price { min-width: calc(4ch + 0.8em + 16px); text-align: center; }
+.act-up.maxed { position: relative; }
+.act-up.maxed > :not(.act-max) { visibility: hidden; }
+.act-up .act-max { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
 .up-tip {
   position: absolute;
   z-index: 10;
