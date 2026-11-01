@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>塔防小行星</title>
-  <link rel="stylesheet" href="style.css?v=074482db">
+  <link rel="stylesheet" href="style.css?v=f3305d84">
 </head>
 <body>
   <div id="rotateHint"><div><div class="rotate-icon">📱</div><b data-i18n>請把手機轉成橫向</b><span data-i18n>橫著拿才看得到整個戰場和下面的按鈕</span></div></div>
@@ -17,12 +17,13 @@
       <div class="stat" id="enemiesLeft"></div>
       <button id="coopBtn" title="雙人合作：兩台電腦連線一起玩" data-i18n-title><svg class="tb-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="16.4" cy="7.6" r="3.1" fill="currentColor" opacity=".5"/><path d="M12.2 20.6c.5-3.9 2.3-6.2 4.7-6.2s4.3 2.3 4.8 6.2z" fill="currentColor" opacity=".5"/><circle cx="8.8" cy="8.4" r="3.6" fill="currentColor"/><path d="M2.4 21.2c.4-4.6 2.9-7.4 6.4-7.4s6 2.8 6.4 7.4z" fill="currentColor"/></svg><span data-i18n>雙人</span></button>
       <button id="mapBtn" title="選擇地圖" data-i18n-title><svg class="tb-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 10.2l4.3-3.1 5.8.5 5.1 2.9 1.6 4.8-2.5 4.7-6 1.9-6.4-1.3-3.6-4.1z" fill="currentColor" opacity=".85"/><circle cx="8.9" cy="14.4" r="2.1" fill="#1b2238" opacity=".4"/><circle cx="15.6" cy="16.4" r="1.4" fill="#1b2238" opacity=".4"/><circle cx="15.4" cy="11.5" r="1" fill="#1b2238" opacity=".4"/><path d="M12 7.3V1.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M12.6 1.3l5.8 1.75-5.8 1.75z" fill="#ff8a80"/></svg><span id="mapName" data-i18n>地圖</span></button>
-      <button id="rankBtn" title="積分排行：每張地圖過關時剩下的生命就是分數，五張滿分 100" data-i18n-title><svg class="tb-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.6l1.45 2.95 3.25.47-2.35 2.3.55 3.24L12 9.03l-2.9 1.53.55-3.24-2.35-2.3 3.25-.47z" fill="#ffd54f"/><rect x="9.2" y="12" width="5.6" height="10" rx="1.3" fill="currentColor"/><rect x="2.6" y="15" width="5.6" height="7" rx="1.3" fill="currentColor" opacity=".7"/><rect x="15.8" y="17.2" width="5.6" height="4.8" rx="1.3" fill="currentColor" opacity=".5"/></svg><span data-i18n>排行</span></button>
-      <button id="settingsBtn" title="設定：遊戲說明、語言、版本資訊" data-i18n data-i18n-title>⚙ 設定</button>
+      <button id="rankBtn" title="積分排行：每張地圖過關時剩下的生命就是分數（每張最多 20 分），全部加起來是總分" data-i18n-title><svg class="tb-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.6l1.45 2.95 3.25.47-2.35 2.3.55 3.24L12 9.03l-2.9 1.53.55-3.24-2.35-2.3 3.25-.47z" fill="#ffd54f"/><rect x="9.2" y="12" width="5.6" height="10" rx="1.3" fill="currentColor"/><rect x="2.6" y="15" width="5.6" height="7" rx="1.3" fill="currentColor" opacity=".7"/><rect x="15.8" y="17.2" width="5.6" height="4.8" rx="1.3" fill="currentColor" opacity=".5"/></svg><span data-i18n>排行</span></button>
+      <button id="settingsBtn" title="設定：語言、音效與音樂、遊戲說明、版本資訊" data-i18n data-i18n-title>⚙ 設定</button>
       <button id="fsBtn" title="全螢幕（F）" data-i18n-title>⛶</button>
     </header>
     <div id="settingsMenu" class="set-menu hidden" role="menu">
       <button type="button" role="menuitem" data-set-open="lang"><svg class="menu-ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z"/></svg><span data-i18n>語言</span></button>
+      <button type="button" role="menuitem" data-set-open="sound"><svg class="menu-ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" fill="currentColor" fill-opacity=".25"/><path d="M15.5 9a4.2 4.2 0 0 1 0 6M18.3 6.3a8 8 0 0 1 0 11.4"/></svg><span data-i18n>音效與音樂</span></button>
       <button type="button" role="menuitem" data-set-open="help"><svg class="menu-ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10 5 7.3 4.5 3.5 4.8v13.4c3.8-.3 6.5.2 8.5 1.7 2-1.5 4.7-2 8.5-1.7V4.8C16.7 4.5 14 5 12 6.5z"/><path d="M12 6.5v13.4"/></svg><span data-i18n>遊戲說明</span></button>
       <button type="button" role="menuitem" data-set-open="about"><svg class="menu-ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><circle cx="12" cy="7.6" r="1.1" fill="currentColor" stroke="none"/></svg><span data-i18n>版本資訊</span></button>
     </div>
@@ -56,23 +57,46 @@
             <p class="muted" data-i18n>選擇遊戲顯示的語言。換了會重新載入網頁，這一局會重新開始</p>
             <div id="langList"></div>
           </div>
+          <div class="set-page hidden" data-set-page="sound"><div id="soundBody"></div></div>
           <div class="set-page hidden" data-set-page="help">
             <p data-i18n>敵人會沿著道路前進，在路旁蓋防禦塔阻止他們！</p>
-            <ul>
-              <li data-i18n>點選下方的塔（或按 <kbd>1</kbd>~<kbd>5</kbd>），再點草地建造</li>
+            <div class="help-tabs" role="tablist">
+              <button type="button" role="tab" data-help-tab="0" aria-selected="true" class="on" data-i18n>遊戲操作</button>
+              <button type="button" role="tab" data-help-tab="1" aria-selected="false" data-i18n>防禦塔</button>
+              <button type="button" role="tab" data-help-tab="2" aria-selected="false" data-i18n>地圖</button>
+              <button type="button" role="tab" data-help-tab="3" aria-selected="false" data-i18n>怪物</button>
+            </div>
+            <ul role="tabpanel" data-help-sec="0">
+              <li data-i18n>點選下方的塔（或按數字鍵 <kbd>1</kbd>、<kbd>2</kbd>…，從左邊數過來），再點草地建造</li>
               <li data-i18n>點擊已建造的塔可以 <b>升級</b> 或 <b>出售</b>；選了塔之後 <b>右鍵點怪物</b> 可以讓它鎖定攻擊那一隻</li>
               <li data-i18n><b>左鍵點怪物</b> 可以看牠的血量和資料</li>
-              <li data-i18n>被 <b>冰霜塔</b> 減速的怪物受到的傷害 +30%，和其他塔一起搭配最有效</li>
-              <li data-i18n>青綠色的 <b>飛行</b> 怪物會成群在空中飛，冰霜塔和砲塔打不到，記得蓋幾座弓箭塔或狙擊塔</li>
-              <li data-i18n><b>增幅塔</b> 自己不攻擊，但範圍內的其他塔攻擊力 +30%、攻速 +15%（升級更高），蓋在一群塔中間最划算</li>
-              <li data-i18n>前幾波比較輕鬆，<b>最後一波</b> 精英的主力和 Boss 一起蜂擁而上，是最難的一波，記得趁前期把塔蓋好、升級</li>
               <li data-i18n>按 <kbd>空白鍵</kbd> 開始下一波，<kbd>Esc</kbd> 取消選取</li>
-              <li data-i18n>按 <kbd>F</kbd> 或右上角的 <b>⛶</b> 切換全螢幕</li>
-              <li data-i18n>按右上角的 <b>雙人</b> 可以和朋友連線一起玩：各有自己的金幣、各自蓋塔，怪物會變多；連線時按 <kbd>Enter</kbd> 可以聊天</li>
               <li data-i18n>方向鍵（或 <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd>）或 <b>右鍵拖曳</b> 移動畫面，<b>滾輪</b> 或 <kbd>+</kbd> <kbd>-</kbd> 縮放</li>
+              <li data-i18n>按 <kbd>F</kbd> 或右上角的 <b>⛶</b> 切換全螢幕</li>
               <li data-i18n>手機請橫著拿：<b>點一下</b> 蓋塔、選塔；<b>一根手指拖曳</b> 移動畫面，<b>兩根手指捏合</b> 縮放；選了塔之後 <b>長按怪物</b> 鎖定攻擊</li>
-              <li data-i18n>按右上角的 <b>排行</b> 輸入暱稱就能上榜：每張地圖過關時剩下的生命就是那張的分數，每張記最佳成績，五張都滿命是 100 分</li>
-              <li data-i18n>每張地圖撐過 10 波就過關，接著挑戰下一張：隕石坑（簡單）→ 星環走廊（普通）→ 大峽谷（困難）→ 沙丘大道（極難，兩線道、敵人兩隻並排）→ 毒沼迷宮（極難，彎來彎去的兩線道）</li>
+              <li data-i18n>按 <kbd>M</kbd> 一次關掉或打開全部聲音；⚙ 設定 → <b>音效與音樂</b> 可以分別開關、調整音量</li>
+              <li data-i18n>按右上角的 <b>雙人</b> 可以和朋友連線一起玩：各有自己的金幣、各自蓋塔，怪物會變多；連線時按 <kbd>Enter</kbd> 可以聊天</li>
+              <li data-i18n>按右上角的 <b>排行</b> 輸入暱稱就能上榜：每張地圖過關時剩下的生命就是那張的分數（最多 20 分），每張記最佳成績，全部加起來是總分</li>
+            </ul>
+            <ul role="tabpanel" data-help-sec="1" hidden>
+              <li data-i18n>被 <b>冰霜塔</b> 減速的怪物受到的傷害 +30%，和其他塔一起搭配最有效</li>
+              <li data-i18n><b>增幅塔</b> 自己不攻擊，但範圍內的其他塔攻擊力 +30%、攻速 +15%（升級更高），蓋在一群塔中間最划算</li>
+              <li data-i18n><b>三角座星系</b> 起可以蓋 <b>電弧塔</b>（閃電打中一隻後再跳到附近最多 3 隻，飛行敵人也打得到）和 <b>雷射塔</b>（光束照著同一隻越照越痛，護盾、裝甲都擋不住）</li>
+              <li data-i18n><b>漩渦星系</b> 起可以蓋 <b>引力塔</b>（引力波讓附近的敵人原地打轉、慢慢被拉回去，不扣血，飛行敵人也拉得動）</li>
+            </ul>
+            <ul role="tabpanel" data-help-sec="2" hidden>
+              <li data-i18n>每張地圖撐過 10 波就過關，接著挑戰下一張：隕石坑（簡單）→ 星環走廊（普通）→ 大峽谷（困難）→ 沙丘大道（極難，長長的階梯形大道）→ 毒沼迷宮（極難，彎來彎去、空地很少）</li>
+              <li data-i18n>每個星系有五關：銀河系的五關可以直接選，之後的星系要過了上一關才能挑戰下一關；一個星系累積 10 顆★（滿分 15）就能挑戰下一個星系；過關時剩下的生命越多星星越多：6 條以上 ★★，★★★ 照難度要剩 18（簡單）、16（普通）、14（困難）、12 條（極難）以上</li>
+              <li data-i18n><b>仙女座星系</b> 的地圖有新的地形：<b>紫水晶、巨石</b> 的格子不能蓋塔；蓋在 <b>高台</b> 上的塔射程 +25%；地面的敵人鑽進 <b>隧道</b> 就打不到（飛行敵人照樣打得到）；有些地圖有 <b>兩個入口</b> 或 <b>分岔路</b></li>
+              <li data-i18n><b>三角座星系</b> 的地圖有 <b>傳送門</b>（敵人走進紫色的門，就從青色的出口冒出來）和發光的 <b>能量格</b>（蓋在上面的塔攻擊力 +20%），有些地圖有 <b>三個入口</b></li>
+              <li data-i18n><b>漩渦星系</b> 的地圖有 <b>漩渦洋流</b>（藍色箭頭的路段敵人變快、橘色的變慢）、<b>星門</b>（每隔幾波換一條路開，有紅色光牆的是關著的）、<b>暗星雲</b>（蓋在深紫色霧裡的塔射程 -30%）和 <b>引力漩渦</b>（敵人第一次走進去會被甩回 3 格）</li>
+            </ul>
+            <ul role="tabpanel" data-help-sec="3" hidden>
+              <li data-i18n>青綠色的 <b>飛行</b> 怪物會成群在空中飛，冰霜塔和砲塔打不到，記得蓋幾座弓箭塔或狙擊塔</li>
+              <li data-i18n>前幾波比較輕鬆，<b>最後一波</b> 精英的主力和 Boss 一起蜂擁而上，是最難的一波，記得趁前期把塔蓋好、升級</li>
+              <li data-i18n><b>分裂怪</b> 被打倒會裂成 3 隻跑得很快的碎片，用砲塔一次炸掉最划算；<b>治療怪</b> 每 2 秒幫附近的敵人回血，右鍵鎖定先打倒牠</li>
+              <li data-i18n><b>護盾怪</b> 的藍色護盾擋住每發低於 40 的傷害，要用狙擊塔、升級過的塔或雷射塔打破，護盾破了才打得到本體</li>
+              <li data-i18n><b>裝甲怪</b> 每一發傷害少 15，弓箭塔、冰霜塔幾乎打不動，要用狙擊塔或升級過的塔（雷射塔的光束不受裝甲影響）；<b>母艦</b> 沿路放出無人機，漏掉扣 3 條命</li>
             </ul>
           </div>
           <div class="set-page hidden" data-set-page="about" id="aboutPage"></div>
@@ -117,16 +141,17 @@
     </footer>
   </div>
   <script>window.DEV_ALLOWED = /^(file:|https?:\/\/(localhost|127\.0\.0\.1)[:/])/i.test(location.href);</script>
-  <script src="i18n.js?v=b0c4816c"></script>
+  <script src="i18n.js?v=39c18268"></script>
   <script src="vendor/three.min.js?v=a13f10ad"></script>
-  <script src="logic.js?v=cd906383"></script>
-  <script src="render3d.js?v=f8014f23"></script>
+  <script src="logic.js?v=2bcf419f"></script>
+  <script src="render3d.js?v=cb45acc3"></script>
   <script src="devtools.js?v=3b35ac8c"></script>
-  <script src="gallery.js?v=25cae5a9"></script>
-  <script src="towergallery.js?v=f0be0446"></script>
-  <script src="coop.js?v=35ba4b24"></script>
-  <script src="waveeditor.js?v=61e45a9d"></script>
-  <script src="leaderboard.js?v=fd06af12"></script>
-  <script src="game.js?v=1f0cc0ec"></script>
+  <script src="gallery.js?v=69aef539"></script>
+  <script src="towergallery.js?v=31af7a5d"></script>
+  <script src="coop.js?v=90ad2980"></script>
+  <script src="waveeditor.js?v=b5075a0c"></script>
+  <script src="leaderboard.js?v=64d3183f"></script>
+  <script src="sound.js?v=0380aa2f"></script>
+  <script src="game.js?v=1ad992ac"></script>
 </body>
 </html>
