@@ -76,17 +76,18 @@
               <li data-i18n>手機請橫著拿：<b>點一下</b> 蓋塔、選塔；<b>一根手指拖曳</b> 移動畫面，<b>兩根手指捏合</b> 縮放；選了塔之後 <b>長按怪物</b> 鎖定攻擊</li>
               <li data-i18n>按 <kbd>M</kbd> 一次關掉或打開全部聲音；⚙ 設定 → <b>音效與音樂</b> 可以分別開關、調整音量</li>
               <li data-i18n>按右上角的 <b>雙人</b> 可以和朋友連線一起玩：各有自己的金幣、各自蓋塔，怪物會變多；連線時按 <kbd>Enter</kbd> 可以聊天</li>
-              <li data-i18n>按右上角的 <b>排行</b> 輸入暱稱就能上榜：每張地圖過關時剩下的生命就是那張的分數（最多 20 分），每張記最佳成績，全部加起來是總分</li>
+              <li data-i18n>過關的成績會自動上榜（沒輸入暱稱的話顯示「匿名玩家」，按右上角的 <b>排行</b> 可以輸入暱稱）：每張地圖過關時剩下的生命就是那張的分數（最多 20 分），每張記最佳成績，全部加起來是總分</li>
             </ul>
             <ul role="tabpanel" data-help-sec="1" hidden>
               <li data-i18n>被 <b>冰霜塔</b> 減速的怪物受到的傷害 +30%，和其他塔一起搭配最有效</li>
               <li data-i18n><b>增幅塔</b> 自己不攻擊，但範圍內的其他塔攻擊力 +30%、攻速 +15%（升級更高），蓋在一群塔中間最划算</li>
-              <li data-i18n><b>三角座星系</b> 起可以蓋 <b>電弧塔</b>（閃電打中一隻後再跳到附近最多 3 隻，飛行敵人也打得到）和 <b>雷射塔</b>（光束照著同一隻越照越痛，護盾、裝甲都擋不住）</li>
+              <li data-i18n><b>仙女座星系</b> 起可以蓋 <b>電弧塔</b>（閃電打中一隻後再跳到附近最多 4 隻，飛行敵人也打得到）</li>
+              <li data-i18n><b>三角座星系</b> 起可以蓋 <b>雷射塔</b>（光束照著同一隻越照越痛，護盾、裝甲都擋不住）</li>
               <li data-i18n><b>漩渦星系</b> 起可以蓋 <b>引力塔</b>（引力波讓附近的敵人原地打轉、慢慢被拉回去，不扣血，飛行敵人也拉得動）</li>
             </ul>
             <ul role="tabpanel" data-help-sec="2" hidden>
               <li data-i18n>每張地圖撐過 10 波就過關，接著挑戰下一張：隕石坑（簡單）→ 星環走廊（普通）→ 大峽谷（困難）→ 沙丘大道（極難，長長的階梯形大道）→ 毒沼迷宮（極難，彎來彎去、空地很少）</li>
-              <li data-i18n>每個星系有五關：銀河系的五關可以直接選，之後的星系要過了上一關才能挑戰下一關；一個星系累積 10 顆★（滿分 15）就能挑戰下一個星系；過關時剩下的生命越多星星越多：6 條以上 ★★，★★★ 照難度要剩 18（簡單）、16（普通）、14（困難）、12 條（極難）以上</li>
+              <li data-i18n>每個星系有五關：銀河系的五關可以直接選；一個星系累積 10 顆★（滿分 15），下一個星系的五關就全部解鎖；過關時剩下的生命越多星星越多：6 條以上 ★★，★★★ 照難度要剩 18（簡單）、16（普通）、14（困難）、12 條（極難）以上</li>
               <li data-i18n><b>仙女座星系</b> 的地圖有新的地形：<b>紫水晶、巨石</b> 的格子不能蓋塔；蓋在 <b>高台</b> 上的塔射程 +25%；地面的敵人鑽進 <b>隧道</b> 就打不到（飛行敵人照樣打得到）；有些地圖有 <b>兩個入口</b> 或 <b>分岔路</b></li>
               <li data-i18n><b>三角座星系</b> 的地圖有 <b>傳送門</b>（敵人走進紫色的門，就從青色的出口冒出來）和發光的 <b>能量格</b>（蓋在上面的塔攻擊力 +20%），有些地圖有 <b>三個入口</b></li>
               <li data-i18n><b>漩渦星系</b> 的地圖有 <b>漩渦洋流</b>（藍色箭頭的路段敵人變快、橘色的變慢）、<b>星門</b>（每隔幾波換一條路開，有紅色光牆的是關著的）、<b>暗星雲</b>（蓋在深紫色霧裡的塔射程 -30%）和 <b>引力漩渦</b>（敵人第一次走進去會被甩回 3 格）</li>
@@ -141,17 +142,17 @@
     </footer>
   </div>
   <script>window.DEV_ALLOWED = /^(file:|https?:\/\/(localhost|127\.0\.0\.1)[:/])/i.test(location.href);</script>
-  <script src="i18n.js?v=39c18268"></script>
+  <script src="i18n.js?v=4ade158f"></script>
   <script src="vendor/three.min.js?v=a13f10ad"></script>
-  <script src="logic.js?v=2bcf419f"></script>
+  <script src="logic.js?v=536421d5"></script>
   <script src="render3d.js?v=cb45acc3"></script>
   <script src="devtools.js?v=3b35ac8c"></script>
   <script src="gallery.js?v=69aef539"></script>
   <script src="towergallery.js?v=31af7a5d"></script>
   <script src="coop.js?v=90ad2980"></script>
   <script src="waveeditor.js?v=b5075a0c"></script>
-  <script src="leaderboard.js?v=64d3183f"></script>
+  <script src="leaderboard.js?v=e511d852"></script>
   <script src="sound.js?v=0380aa2f"></script>
-  <script src="game.js?v=1ad992ac"></script>
+  <script src="game.js?v=7389e2be"></script>
 </body>
 </html>
